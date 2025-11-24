@@ -1,8 +1,8 @@
 import React from 'react';
 import Book from './ui/Book.jsx';
-import { books } from '../data';
 
-const Featured = () => {
+
+const Featured = ( {books} ) => {
     
     return (
         <section id="features">
