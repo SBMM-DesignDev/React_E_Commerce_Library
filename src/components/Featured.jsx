@@ -2,8 +2,9 @@ import React from 'react';
 import Book from './ui/Book.jsx';
 
 
+
 const Featured = ( {books} ) => {
-    
+     
     return (
         <section id="features">
             <div className="container">

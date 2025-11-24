@@ -6,7 +6,7 @@ import Price from '../components/ui/Price.jsx';
 
 
 
-const BookInfo = ( {books} ) => {
+const BookInfo = ( ) => {
  
 
  return (

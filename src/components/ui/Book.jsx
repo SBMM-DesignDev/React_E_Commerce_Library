@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import Rating from "./Book.jsx";
 import Price from "./Price.jsx";
 
+
 const Book = ({ book }) => {
     console.log(book.url)
+
     return (
         <div>
             <div className="book">

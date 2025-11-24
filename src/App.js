@@ -3,6 +3,8 @@ import Nav from './components/Nav.jsx';
 import Home from './pages/Home.jsx';
 import Books from './pages/Books.jsx';
 import BookInfo from './pages/BookInfo.jsx';
+import Featured from './components/Featured.jsx';
+import Discounted from './components/Discounted.jsx';
 import Footer from './components/Footer.jsx';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -13,7 +15,7 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact render={() => <Home books={books} /> }  />
         <Route path="/books" exact render={() => <Books books={books}  />} />
         <Route path="/books/1" render={() => <BookInfo books={books} />} />
         <Footer />
