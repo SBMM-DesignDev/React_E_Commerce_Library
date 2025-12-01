@@ -1,4 +1,4 @@
-import {React, useState } from 'react'
+import React, { useState } from 'react'
 import Book from '../components/ui/Book.jsx';
 
 
@@ -26,7 +26,7 @@ const Books = ({books: initialBooks}) => {
                         <div className="books__header">
                             <h2 className="section__title books__header--title">All Books</h2>
                                 <select id="filter" defaultValue="DEFAULT" onChange={(event) => filteredBooks(event.target.value)} >
-                                    <option value="DEAFULT"   >Sort</option>
+                                    <option value="DEFAULT" disabled>Sort</option>
                                     <option value="LOW_TO_HIGH">Price, Low to High</option>
                                     <option value="HIGH_TO_LOW">Price, High to Low</option>
                                     <option value="RATING">Rating</option>
@@ -37,7 +37,7 @@ const Books = ({books: initialBooks}) => {
                             {books.map((book) => (
                                 <Book book={book} key={book.id} />
 
-                            ))}
+                            ))} 
                         </div>
                     </div>
                 </section>

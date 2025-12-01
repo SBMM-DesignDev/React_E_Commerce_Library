@@ -1,10 +1,13 @@
 import React from 'react';
 import Book from './ui/Book.jsx';
+import { books } from '../data';
 
 
 
-const Featured = ( {books} ) => {
-     
+const Featured = () => {
+    console.log(books)
+    
+   
     return (
         <section id="features">
             <div className="container">
@@ -19,8 +22,9 @@ const Featured = ( {books} ) => {
                             .slice(0, 4)
                             .map((book) => (
                             <Book book={book} key={book.id} />
+                             
                         ))}
-                        
+                       
                        
                     </div>
                 </div>

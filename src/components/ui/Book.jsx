@@ -4,15 +4,16 @@ import Rating from "./Book.jsx";
 import Price from "./Price.jsx";
 
 
-const Book = ({ book }) => {
-    console.log(book.url)
+
+const Book = ( {book} ) => {
+    console.log(book)
 
     return (
         <div>
             <div className="book">
                 <Link to="/books/1">
                     <figure className="book__img--wrapper">
-                        <img src={book.url} alt="" className="book__img" />
+                        <img src={book.url} className="book__img" />
                     </figure>
                 </Link>
                 <div className="book__title">

@@ -6,12 +6,12 @@ import Price from '../components/ui/Price.jsx';
 
 
 
-const BookInfo = ( ) => {
+const BookInfo = ( {books} ) => {
  
 
  return (
     <div id="books__body">
-        <div id="books__main">
+        <main id="books__main">
             <div className="books__container">
                 <div className="row">
                     <div className="book__selected--top">
@@ -39,7 +39,7 @@ const BookInfo = ( ) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
  )
 };
