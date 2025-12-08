@@ -425,7 +425,15 @@ FEATURES
   margin-bottom: 8px;
   border-radius: 4px;
   overflow: hidden;
-  display: flex;
+  width: 100%
+  
+}
+
+.book__img {
+  width: 100%;
+  max-width: 250px;
+  max-height: 300px;
+  
 }
 
 .book__title {
@@ -435,6 +443,7 @@ FEATURES
 
 .book__title--link {
   color: #242424;
+  
   
 }
 
@@ -603,6 +612,7 @@ select {
   font-size: 32px;
   color: #242424;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -617,6 +627,7 @@ select {
 .book__selected--title--top {
   margin-left: 10px;
   margin-bottom: 0;
+
 }
 
 .book__summary {
@@ -629,15 +640,23 @@ select {
 
 .book__summary--title {
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .book__summary--para {
   margin-bottom: 16px;
+  text-align: left;
 }
 
 .book__price {
   font-size: 16px;
   margin: 8px 0 24px 0;
+}
+
+.books__recommended {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .link__breadcrumbs {
@@ -706,6 +725,7 @@ select {
   flex-direction: column;
   justify-content: center;
   padding: 8px 16px;
+ 
 }
 
 .cart__book--title {
@@ -715,6 +735,7 @@ select {
 
 .cart__book--price {
   margin-bottom: 16px;
+  text-align: left;
 }
 
 .cart__book--remove {
